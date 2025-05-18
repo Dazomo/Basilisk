@@ -21,8 +21,6 @@
 > Glow
 > FOV Changer
 
----
-
 <a id="screenshot"></a>
 
 ### 📸 | Screenshots
