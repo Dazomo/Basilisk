@@ -3,15 +3,11 @@
 🪝 Swarm-Hook
 </h1>
 
----
-
 ## 🌐 | Content
 
 - [⚔️ Features](#features)
 - [📸 Screenshots](#screenshot)
 - [⚠️ Note](#note)
-
----
 
 <a id="features"></a>
 
