@@ -16,7 +16,7 @@
 
 # ⚔️ | Features
 
-> Aim Assist\n
+> Aim Assist
 > Triggerbot
 > ESP
 > Chams
