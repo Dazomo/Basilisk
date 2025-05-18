@@ -1,5 +1,4 @@
 <a id="top"></a>
-#
 <h1 align="center">
 🪝 Swarm-Hook
 </h1>
